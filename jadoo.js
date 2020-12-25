@@ -5,7 +5,7 @@ function Sound1() {
     image.src = "PicsArt_12-25-10.59.20.png"
     setTimeout(() => {
         image.src = 'PicsArt_12-25-10.58.55.png'
-    }, 300);
+    }, 500);
 }
 function Sound2() {
     let audio2 = document.querySelector('.sound2')
@@ -14,7 +14,7 @@ function Sound2() {
     image.src = "PicsArt_12-25-10.59.20.png"
     setTimeout(() => {
         image.src = 'PicsArt_12-25-10.58.55.png'
-    }, 300);
+    }, 500);
 }
 function Sound3() {
     let audio3 = document.querySelector('.sound3')
@@ -23,7 +23,7 @@ function Sound3() {
     image.src = "PicsArt_12-25-10.59.20.png"
     setTimeout(() => {
         image.src = 'PicsArt_12-25-10.58.55.png'
-    }, 300);
+    }, 500);
 }
 function Sound4() {
     let audio4 = document.querySelector('.sound4')
@@ -32,7 +32,7 @@ function Sound4() {
     image.src = "PicsArt_12-25-10.59.20.png"
     setTimeout(() => {
         image.src = 'PicsArt_12-25-10.58.55.png'
-    }, 300);
+    }, 500);
 }
 function Sound5() {
     let audio5 = document.querySelector('.sound5')
@@ -41,7 +41,7 @@ function Sound5() {
     image.src = "PicsArt_12-25-10.59.20.png"
     setTimeout(() => {
         image.src = 'PicsArt_12-25-10.58.55.png'
-    }, 300);
+    }, 500);
 }
 function Sound6() {
     let audio6 = document.querySelector('.sound6')
@@ -50,7 +50,7 @@ function Sound6() {
     image.src = "PicsArt_12-25-10.59.20.png"
     setTimeout(() => {
         image.src = 'PicsArt_12-25-10.58.55.png'
-    }, 300);
+    }, 500);
 }
 function Sound7() {
     let audio7 = document.querySelector('.sound7')
@@ -59,7 +59,7 @@ function Sound7() {
     image.src = "PicsArt_12-25-10.59.20.png"
     setTimeout(() => {
         image.src = 'PicsArt_12-25-10.58.55.png'
-    }, 300);
+    }, 500);
 }
 function Sound8() {
     let audio8 = document.querySelector('.sound8')
@@ -68,5 +68,5 @@ function Sound8() {
     image.src = "PicsArt_12-25-10.59.20.png"
     setTimeout(() => {
         image.src = 'PicsArt_12-25-10.58.55.png'
-    }, 300);
+    }, 500);
 }
