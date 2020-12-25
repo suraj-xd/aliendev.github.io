@@ -11,6 +11,7 @@ body{
 .banner{
     position: absolute;
     text-align: center;
+    Width: 30vh;
     top: 7%;
     Left: 15%;
     Right: 15%;
