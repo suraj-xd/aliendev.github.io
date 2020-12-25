@@ -10,14 +10,13 @@ body{
 }
 .banner{
     position: absolute;
-    width: 65vh;
+    width: auto;
     text-align: center;
     top: 7%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: rgb(0, 255, 0);
     padding: 25px 50px;
-    font-size: 30px;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
