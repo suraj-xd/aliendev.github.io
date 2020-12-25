@@ -1,0 +1,396 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIEN DEV</title>
+    <!-- <link rel="stylesheet" type="text/css" href="button.css"> -->
+</head>
+<style>
+    body{
+    margin: 4px;
+    padding: 4px;
+    min-height: 100vh;
+    background: hsl(0, 0%, 0%);
+    font-family: consolas;
+}
+.banner{
+    position: absolute;
+    width: 42vh;
+    text-align: center;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(0, 255, 0);
+    padding: 10px 20px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 20px 50px rgba(0,0,0,.5);
+    overflow: hidden;
+    background: #1c0750;
+
+
+}
+.banner:before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.05);
+
+}
+
+.banner span:nth-child(1)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #0C002B, #1779ff);
+    animation: animate1 2s linear infinite;
+} 
+@keyframes animate1{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+.banner span:nth-child(2)
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #0C002B, #1779ff);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+} 
+@keyframes animate2{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+.banner span:nth-child(3)
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, #0C002B, #1779ff);
+    animation: animate3 2s linear infinite;
+} 
+@keyframes animate3{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.banner span:nth-child(4)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top, #0C002B, #1779ff);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+} 
+@keyframes animate4{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+#a{
+    width: 75px;
+    height: 40px;
+    text-align: center;
+    border-radius: 9px;
+    color: rgb(218, 214, 214);
+    text-decoration: none;
+    font-size: 25px;
+    overflow: hidden;
+    transition: 0.2s;
+    background: rgb(156, 15, 15);
+} 
+#a:hover{
+    color: black;
+    background: #fa2323;
+    box-shadow: 0 0 10px #fa2323, 0 0 40px #fa2323, 0 0 80px #fa2323;
+    transition-delay: .1s
+}
+#b{
+    width: 75px;
+    height: 40px;
+    text-align: center;
+    border-radius: 9px;
+    color: rgb(218, 214, 214);
+    text-decoration: none;
+    font-size: 25px;
+    overflow: hidden;
+    transition: 0.2s;
+    background: rgb(156, 15, 15);
+}
+#b:hover{
+    color: black;
+    background: #fa2323;
+    box-shadow: 0 0 10px #fa2323, 0 0 40px #fa2323, 0 0 80px #fa2323;
+    transition-delay: .1s
+}
+#c{
+    width: 75px;
+    height: 40px;
+    text-align: center;
+    border-radius: 9px;
+    color: rgb(218, 214, 214);
+    text-decoration: none;
+    font-size: 25px;
+    overflow: hidden;
+    transition: 0.2s;
+    background: rgb(156, 15, 15);
+}
+#c:hover{
+    color: black;
+    background: #fa2323;
+    box-shadow: 0 0 10px #fa2323, 0 0 40px #fa2323, 0 0 80px #fa2323;
+    transition-delay: .1s
+}
+#d{
+    width: 75px;
+    height: 40px;
+    text-align: center;
+    border-radius: 9px;
+    color: rgb(218, 214, 214);
+    text-decoration: none;
+    font-size: 25px;
+    overflow: hidden;
+    transition: 0.2s;
+    background: rgb(156, 15, 15);
+}
+#d:hover{
+    color: black;
+    background: #fa2323;
+    box-shadow: 0 0 10px #fa2323, 0 0 40px #fa2323, 0 0 80px #fa2323;
+    transition-delay: .1s
+}
+#e{
+    width: 75px;
+    height: 40px;
+    text-align: center;
+    border-radius: 9px;
+    color: rgb(218, 214, 214);
+    text-decoration: none;
+    font-size: 25px;
+    overflow: hidden;
+    transition: 0.2s;
+    background: rgb(156, 15, 15);
+}
+#e:hover{
+    color: black;
+    background: #fa2323;
+    box-shadow: 0 0 10px #fa2323, 0 0 40px #fa2323, 0 0 80px #fa2323;
+    transition-delay: .1s
+}
+#f{
+    width: 75px;
+    height: 40px;
+    text-align: center;
+    border-radius: 9px;
+    color: rgb(218, 214, 214);
+    text-decoration: none;
+    font-size: 25px;
+    overflow: hidden;
+    transition: 0.2s;
+    background: rgb(156, 15, 15);
+}
+#f:hover{
+    color: black;
+    background: #fa2323;
+    box-shadow: 0 0 10px #fa2323, 0 0 40px #fa2323, 0 0 80px #fa2323;
+    transition-delay: .1s
+}
+#g{
+   width: 75px;
+    height: 40px;
+    text-align: center;
+    border-radius: 9px;
+    color: rgb(218, 214, 214);
+    text-decoration: none;
+    font-size: 25px;
+    overflow: hidden;
+    transition: 0.2s;
+    background: rgb(156, 15, 15);
+}
+#g:hover{
+    color: black;
+    background: #fa2323;
+    box-shadow: 0 0 10px #fa2323, 0 0 40px #fa2323, 0 0 80px #fa2323;
+    transition-delay: .1s
+}
+#h{
+    width: 75px;
+    height: 40px;
+    text-align: center;
+    border-radius: 9px;
+    color: rgb(218, 214, 214);
+    text-decoration: none;
+    font-size: 25px;
+    overflow: hidden;
+    transition: 0.2s;
+    background: rgb(156, 15, 15);
+}
+#h:hover{
+    color: black;
+    background: #fa2323;
+    box-shadow: 0 0 10px #fa2323, 0 0 40px #fa2323, 0 0 80px #fa2323;
+    transition-delay: .1s
+}
+</style>
+
+<body>
+    <a id="banner" class="banner" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        ALIEN CALLING DEVICE
+    </a>
+    <br> <br><br> <br><br> <br><br>
+    <div style="text-align: center" id="img" class="image">
+        <img style="height: 31vh;" src="PicsArt_12-25-10.58.55.png" alt="" srcset="">
+
+    </div>
+    <br> <br>
+    <div style="text-align: center; " id="firstrow">
+        <button onclick="Sound1()" id="a">
+            A
+        </button>
+        <button onclick="Sound2()" id="b">
+            B
+        </button>
+        <button onclick="Sound3()" id="c">
+            C
+        </button>
+        <button onclick="Sound4()" id="d">
+            D
+        </button> <br> <br>
+        <button onclick="Sound5()" id="e">
+            E
+        </button>
+        <button onclick="Sound6()" id="f">
+            F
+        </button>
+        <button onclick="Sound7()" id="g">
+            G
+        </button>
+        <button onclick="Sound8()" id="h">
+            H
+        </button>
+
+    </div>
+    <br> <br>
+    <h6 style="color: white;">© ig- suraj.xdd</h6>
+    <audio class="sound1" src="1.mp3" type="audio/mpeg"></audio>
+    <audio class="sound2" src="2.mp3" type="audio/mpeg"></audio>
+    <audio class="sound3" src="3.mp3" type="audio/mpeg"></audio>
+    <audio class="sound4" src="4.mp3" type="audio/mpeg"></audio>
+    <audio class="sound5" src="5.mp3" type="audio/mpeg"></audio>
+    <audio class="sound6" src="6.mp3" type="audio/mpeg"></audio>
+    <audio class="sound7" src="7.mp3" type="audio/mpeg"></audio>
+    <audio class="sound8" src="8.mp3" type="audio/mpeg"></audio>
+
+    <script>
+        function Sound1() {
+            let audio1 = document.querySelector('.sound1')
+            audio1.play()
+            let image = document.querySelector('img')
+            image.src = "PicsArt_12-25-10.59.20.png"
+            setTimeout(() => {
+                image.src = 'PicsArt_12-25-10.58.55.png'
+            }, 500);
+        }
+        function Sound2() {
+            let audio2 = document.querySelector('.sound2')
+            audio2.play()
+            let image = document.querySelector('img')
+            image.src = "PicsArt_12-25-10.59.20.png"
+            setTimeout(() => {
+                image.src = 'PicsArt_12-25-10.58.55.png'
+            }, 500);
+        }
+        function Sound3() {
+            let audio3 = document.querySelector('.sound3')
+            audio3.play()
+            let image = document.querySelector('img')
+            image.src = "PicsArt_12-25-10.59.20.png"
+            setTimeout(() => {
+                image.src = 'PicsArt_12-25-10.58.55.png'
+            }, 500);
+        }
+        function Sound4() {
+            let audio4 = document.querySelector('.sound4')
+            audio4.play()
+            let image = document.querySelector('img')
+            image.src = "PicsArt_12-25-10.59.20.png"
+            setTimeout(() => {
+                image.src = 'PicsArt_12-25-10.58.55.png'
+            }, 500);
+        }
+        function Sound5() {
+            let audio5 = document.querySelector('.sound5')
+            audio5.play()
+            let image = document.querySelector('img')
+            image.src = "PicsArt_12-25-10.59.20.png"
+            setTimeout(() => {
+                image.src = 'PicsArt_12-25-10.58.55.png'
+            }, 500);
+        }
+        function Sound6() {
+            let audio6 = document.querySelector('.sound6')
+            audio6.play()
+            let image = document.querySelector('img')
+            image.src = "PicsArt_12-25-10.59.20.png"
+            setTimeout(() => {
+                image.src = 'PicsArt_12-25-10.58.55.png'
+            }, 500);
+        }
+        function Sound7() {
+            let audio7 = document.querySelector('.sound7')
+            audio7.play()
+            let image = document.querySelector('img')
+            image.src = "PicsArt_12-25-10.59.20.png"
+            setTimeout(() => {
+                image.src = 'PicsArt_12-25-10.58.55.png'
+            }, 500);
+        }
+        function Sound8() {
+            let audio8 = document.querySelector('.sound8')
+            audio8.play()
+            let image = document.querySelector('img')
+            image.src = "PicsArt_12-25-10.59.20.png"
+            setTimeout(() => {
+                image.src = 'PicsArt_12-25-10.58.55.png'
+            }, 500);
+        }
+    </script>
+
+</body>
+
+</html>
