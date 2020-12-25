@@ -12,6 +12,7 @@ body{
     position: absolute;
     text-align: center;
     top: 7%;
+    Left: 15%;
     transform: translate(-50%,-50%);
     color: rgb(0, 255, 0);
     padding: 25px 50px;
